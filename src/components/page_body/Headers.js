@@ -4,7 +4,7 @@ import { ReactComponent as Signin } from '../../assets/svg/wcg-signin.svg';
 const Headers = () => {
     return (
         <header className="w-full text-white">
-            <div className="dark:bg-[#1F2326] lg:hidden">
+            <div className="bg-[#1F2326] lg:hidden">
                 <ul className="max-w-6xl m-auto h-12 flex items-center px-4">
                     <li>
                         <Link to={'/'} className="hover:link px-2 block text-sm">
@@ -25,7 +25,7 @@ const Headers = () => {
                     </li>
                 </ul>
             </div>
-            <div className="dark:bg-[#26292E]">
+            <div className="bg-[#26292E]">
                 <div className="container m-auto py-4 px-4 flex flex-wrap items-center justify-between ">
                     <div className="w-auto items-center flex justify-between">
                         <Link to={"/"} >
@@ -49,7 +49,7 @@ const Headers = () => {
                     </div>
                 </div>
             </div>
-            <div className="dark:bg-[#1F2326] hidden lg:block">
+            <div className="bg-[#1F2326] hidden lg:block">
                 <ul className="container m-auto h-16 flex items-center px-4">
                     <li>
                         <Link to={'/'} className="font-black hover:link md:px-4 block">

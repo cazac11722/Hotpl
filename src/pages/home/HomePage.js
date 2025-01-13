@@ -73,7 +73,7 @@ const HomePage = () => {
                         </div>
 
                         <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4">
-                            <a href="#" class="group relative block h-64 sm:h-80 lg:h-50">
+                            <div class="group relative block h-64 sm:h-80 lg:h-40">
                                 <span class="absolute inset-0 border-2 border-dashed border-black"></span>
 
                                 <div
@@ -105,16 +105,16 @@ const HomePage = () => {
                                     >
                                         <h3 class="mt-4 text-xl font-medium sm:text-2xl">주짓수</h3>
 
-                                        <p class="mt-4 text-sm sm:text-base">
+                                        {/* <p class="mt-4 text-sm sm:text-base">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem
                                             omnis atque culpa repellendus.
-                                        </p>
+                                        </p> */}
 
                                         <p class="mt-8 font-bold">Read more</p>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="group relative block h-64 sm:h-80 lg:h-50">
+                            </div>
+                            <div class="group relative block h-64 sm:h-80 lg:h-40">
                                 <span class="absolute inset-0 border-2 border-dashed border-black"></span>
 
                                 <div
@@ -146,16 +146,16 @@ const HomePage = () => {
                                     >
                                         <h3 class="mt-4 text-xl font-medium sm:text-2xl">축구</h3>
 
-                                        <p class="mt-4 text-sm sm:text-base">
+                                        {/* <p class="mt-4 text-sm sm:text-base">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem
                                             omnis atque culpa repellendus.
-                                        </p>
+                                        </p> */}
 
                                         <p class="mt-8 font-bold">Read more</p>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="group relative block h-64 sm:h-80 lg:h-50">
+                            </div>
+                            <div class="group relative block h-64 sm:h-80 lg:h-40">
                                 <span class="absolute inset-0 border-2 border-dashed border-black"></span>
 
                                 <div
@@ -187,16 +187,16 @@ const HomePage = () => {
                                     >
                                         <h3 class="mt-4 text-xl font-medium sm:text-2xl">태권도</h3>
 
-                                        <p class="mt-4 text-sm sm:text-base">
+                                        {/* <p class="mt-4 text-sm sm:text-base">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem
                                             omnis atque culpa repellendus.
-                                        </p>
+                                        </p> */}
 
                                         <p class="mt-8 font-bold">Read more</p>
                                     </div>
                                 </div>
-                            </a>
-                            <a href="#" class="group relative block h-64 sm:h-80 lg:h-50">
+                            </div>
+                            <div class="group relative block h-64 sm:h-80 lg:h-40">
                                 <span class="absolute inset-0 border-2 border-dashed border-black"></span>
 
                                 <div
@@ -228,15 +228,15 @@ const HomePage = () => {
                                     >
                                         <h3 class="mt-4 text-xl font-medium sm:text-2xl">야구</h3>
 
-                                        <p class="mt-4 text-sm sm:text-base">
+                                        {/* <p class="mt-4 text-sm sm:text-base">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem
                                             omnis atque culpa repellendus.
-                                        </p>
+                                        </p> */}
 
                                         <p class="mt-8 font-bold">Read more</p>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </section>
