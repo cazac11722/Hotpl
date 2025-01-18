@@ -1,14 +1,16 @@
 import { Scrollbar, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import main_visual1 from '../../assets/images/main_visual1.png';
+
 
 const HomeBanner = () => {
     // style={{backgroundImage : `url(${img1})` }}
     return (
-        <div className={`flex items-center bg-cover bg-center relative container m-auto`} >
+        <div className={`flex items-center bg-cover bg-center relative`} >
             {/* <div className='backdrop-blur-sm w-full h-full absolute '></div> */}
             <Swiper
-                className="text-black dark:text-white h-96 w-full lg:h-96"
+                className="text-black dark:text-white h-96 w-full lg:h-screen"
                 modules={[Scrollbar, Autoplay]}
                 autoplay={{ // 자동 재생
                     delay: 4500, // 지연 시간 (한 슬라이더에 머물르는 시간)
@@ -22,8 +24,9 @@ const HomeBanner = () => {
                     "--swiper-scrollbar-drag-bg-color": "#fff",
                 }}
             >
-                <SwiperSlide className='bg-cover'></SwiperSlide>
-                <SwiperSlide className='bg-cover'></SwiperSlide>
+                <SwiperSlide className='bg-cover' style={{backgroundImage: `url(${main_visual1})`}}></SwiperSlide>
+                <SwiperSlide className='bg-cover' style={{backgroundImage: `url(${main_visual1})`}}></SwiperSlide>
+                <SwiperSlide className='bg-cover' style={{backgroundImage: `url(${main_visual1})`}}></SwiperSlide>
             </Swiper>
         </div>
     );
