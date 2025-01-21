@@ -26,6 +26,14 @@
 }
 
 
+@font-face {
+  font-family: "Monoton-Regular";
+  font-weight: normal;
+  src: url("./assets/fonts/Monoton/Monoton-Regular.ttf") format("truetype");
+}
+
+
+
 
 body {
   margin: 0;

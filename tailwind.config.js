@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: "class",
-  theme: {},
+  theme: {
+    fontFamily: {
+      'monoton': ['Monoton-Regular'],
+    }
+  },
   plugins: [],
 }
 

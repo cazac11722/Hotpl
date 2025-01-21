@@ -6,31 +6,15 @@ import { ReactComponent as LocationOn } from '../../../assets/svg/locationOn.svg
 import { ReactComponent as ChevronRight } from '../../../assets/svg/ChevronRight.svg';
 
 
-const Section02 = ({ title, data, link }) => {
+const Section04 = ({ title, data, link }) => {
+
     return (
-        <section className="text-white py-3">
-            <div className="container m-auto ">
+        <section className="text-white py-4">
+            <div className="container m-auto">
                 <div className='flex items-center justify-between text-black dark:text-white px-4'>
-                    <h3 className="text-1xl font-black">{title}</h3>
+                    <h3 className="text-1xl font-black">{title} TOP <span className='font-monoton'>10</span></h3>
                     <Link to={link}><ChevronRight className='fill-white' /></Link>
                 </div>
-                <Swiper
-                    className="text-black dark:text-white mt-4 px-4"
-                    speed={500}
-                    spaceBetween={10}
-                    slidesPerView={"auto"}
-                >
-                    <SwiperSlide className='flex items-center justify-center w-1/5 text-xs px-2 py-1 rounded-full text-white bg-red-500 '>
-                        ALL
-                    </SwiperSlide>
-                    <SwiperSlide className='flex items-center justify-center w-1/5 text-xs px-2 py-1 rounded-full text-white bg-zinc-800'>
-                        종목별
-                    </SwiperSlide>
-                    <SwiperSlide className='flex items-center justify-center w-1/5 text-xs px-2 py-1 rounded-full text-white bg-zinc-800'>
-                        종류별
-                    </SwiperSlide>
-
-                </Swiper>
                 <div className='flex mt-4'>
                     <Swiper
                         className="text-black dark:text-white px-4 m-0 w-full"
@@ -41,8 +25,9 @@ const Section02 = ({ title, data, link }) => {
                     >
                         {
                             data.map((e, i) => (
-                                <SwiperSlide className='w-1/3' key={i}>
-                                    <Link className='relative rounded-md overflow-hidden block w-full h-full'>
+                                <SwiperSlide className='w-3/6 relative' key={i}>
+                                    <div className='absolute text-[8rem] -left-0 top-50 h-full font-bold font-monoton'>{i+1}</div>
+                                    <Link className='relative rounded-md overflow-hidden block w-4/6 h-full ml-14'>
                                         <div className='absolute w-full h-full bg-gradient-to-t from-black'></div>
                                         <button type='button' className='absolute top-2 right-2'><Favorite className='fill-white' /></button>
                                         <img src={e.img} className='w-full h-full' />
@@ -60,11 +45,9 @@ const Section02 = ({ title, data, link }) => {
 
                     </Swiper>
                 </div>
-                
             </div>
         </section>
-
     );
 }
 
-export default Section02;
+export default Section04;
