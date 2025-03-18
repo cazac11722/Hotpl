@@ -1,15 +1,13 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import EventSelected from "../body/EventSelected";
-
-import { ReactComponent as KeyArrowUp } from "../../assets/svg/keyArrowUp.svg";
-import { ReactComponent as Search } from '../../assets/svg/search.svg';
-import { ReactComponent as LiveTv } from '../../assets/svg/LiveTv.svg';
-import { ReactComponent as ArrowBack } from '../../assets/svg/ArrowBack.svg';
-import { ReactComponent as MoreVert } from '../../assets/svg/moreVert.svg';
-
-
 import useEventSelected from "../../contexts/hooks/useEventSelected";
+
+import { FaChevronUp } from "react-icons/fa";
+import { MdLiveTv } from "react-icons/md";
+import { LuSearch } from "react-icons/lu";
+import { GoArrowLeft } from "react-icons/go";
+import { IoMdMore } from "react-icons/io";
 
 const Headers = () => {
     const navigate = useNavigate();
@@ -48,7 +46,6 @@ const Headers = () => {
     }, []);
 
 
-
     return (
         <>
             <EventSelected Selected={Selected} />
@@ -59,55 +56,58 @@ const Headers = () => {
                 }}
             >
                 <div className="container m-auto py-4 px-4">
+                    
                     <div className={`w-auto items-center flex justify-between mb-6`}>
                         <Link to={"/Hotpl"}>
                             <img
                                 src={require("../../assets/logo/logo2_white.png")}
-                                className="h-8 -mt-1"
+                                className="h-8 -mt-1 lg:h-10"
                                 alt="Logo"
                             />
                         </Link>
                         <div className="flex">
-                            <LiveTv className="fill-white dark:fill-white mr-4" />
-                            <Search className="fill-white dark:fill-white" />
+                            <MdLiveTv className=" cursor-pointer mr-4" size={25} />
+                            <LuSearch className=" cursor-pointer" size={25} />
                         </div>
                     </div>
-                    <ul id="SelectedFilter" className="w-auto lg:flex flex items-center ">
+
+                    <ul id="SelectedFilter" className="w-auto flex items-center lg:hidden">
                         <li>
                             <button
-                                className={`flex items-center text-sm px-2 font-black border rounded-full mr-4`}
+                                className={`flex items-center text-sm px-2 py-1 border rounded-full mr-4 `}
                                 onClick={() => {
                                     Selected.toggleDropdown('event');
                                 }}
                             >
-                                <span className="mr-2 text-[10px]">종목 : {Selected.eventSelected.join(',')}</span>
-                                <KeyArrowUp className="fill-white rotate-180 w-[15px]" />
+                                <span className="mr-2 text-xs">종목 : {Selected.eventSelected.join(',')}</span>
+                                <FaChevronUp className="fill-white rotate-180" />
                             </button>
                         </li>
                         <li>
                             <button
-                                className={`flex items-center text-sm px-2 font-black border rounded-full mr-4`}
+                                className={`flex items-center text-sm px-2 py-1 border rounded-full mr-4`}
                                 onClick={() => {
                                     Selected.toggleDropdown('type');
                                 }}
                             >
-                                <span className="mr-2 text-[10px]">종류 : {Selected.typeSelected.join(',')}</span>
-                                <KeyArrowUp className="fill-white rotate-180 w-[15px]" />
+                                <span className="mr-2 text-xs">종류 : {Selected.typeSelected.join(',')}</span>
+                                <FaChevronUp className="fill-white rotate-180" />
                             </button>
                         </li>
                     </ul>
+
                     <div id="BtnBack" className="hidden flex justify-between lg:hidden">
                         <Link to={".."} onClick={(e) => {
                             e.preventDefault();
-
                             navigate(-1);
                         }} className="inline-block">
-                            <ArrowBack className="fill-white" />
+                            <GoArrowLeft className="fill-white" />
                         </Link>
                         <button type="" className="inline-block">
-                            <MoreVert className="fill-white" />
+                            <IoMdMore className="fill-white" />
                         </button>
                     </div>
+
                 </div>
             </header>
         </>

@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'monoton': ['Monoton-Regular'],
+      'HakgyoansimPuzzleTTF' : ['HakgyoansimPuzzleTTF-Outline']
     }
   },
   plugins: [],

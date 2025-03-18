@@ -17,12 +17,17 @@ const HomePage = () => {
         {title: "제목 입니다!!!", img : require(`../../assets/images/img3.png`), lc : "대회 주소 입니다!!"},
         {title: "제목 입니다!!!", img : require(`../../assets/images/img4.png`), lc : "대회 주소 입니다!!"},
         {title: "제목 입니다!!!", img : require(`../../assets/images/img3.png`), lc : "대회 주소 입니다!!"},
+        {title: "제목 입니다!!!", img : require(`../../assets/images/img1.png`), lc : "대회 주소 입니다!!"},
+        {title: "제목 입니다!!!", img : require(`../../assets/images/img2.png`), lc : "대회 주소 입니다!!"},
+        {title: "제목 입니다!!!", img : require(`../../assets/images/img3.png`), lc : "대회 주소 입니다!!"},
+        {title: "제목 입니다!!!", img : require(`../../assets/images/img4.png`), lc : "대회 주소 입니다!!"},
+        {title: "제목 입니다!!!", img : require(`../../assets/images/img3.png`), lc : "대회 주소 입니다!!"},
     ]
 
     return (
         <div className="flex flex-col h-screen justify-between">
             <Headers />
-            <main className="flex-auto bg-white dark:bg-[#141414]">
+            <main className="flex-auto bg-white dark:bg-[#141414] ">
                 <HomeBanner />
                 <Section04 title="핫플이 추천한 대회" data={data} link="/Hotpl/Game" />
                 <Section01 title="실시간 인기 대회" data={data} link="/Hotpl/Game" />
@@ -34,7 +39,6 @@ const HomePage = () => {
                 <Section02 title="축구 대회" data={data} link="/Hotpl/Game" />
                 <Section02 title="야구 대회" data={data} link="/Hotpl/Game" />
                 <Section02 title="E스포츠 대회" data={data} link="/Hotpl/Game" />
-                <div className="h-20"></div>
             </main>
             <Footer />
             <BottomNavigationBar />
